@@ -1,0 +1,6 @@
+.idea/
+node_modules/
+gemini-report/
+allure-report/
+allure-result/
+.idea
