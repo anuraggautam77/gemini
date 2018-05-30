@@ -1,0 +1,51 @@
+{
+  "name": "Visual_tests",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Visual_tests",
+  "main": "server.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "es6": "0.0.7",
+    "eslint": "^3.0.1",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-fetch": "0.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jquery": "^0.6.0",
+    "eslint-plugin-no-require-lodash": "^1.1.0",
+    "eslint-plugin-prefer-spread": "^1.0.3",
+    "nyc": "^11.8.0",
+    "style-loader": "^0.21.0"
+  },
+  "devDependencies": {
+    "chromedriver": "2.36",
+    "gemini": " 5.0.0-alpha.8",
+    "gemini-coverage": "^1.0.3",
+    "gemini-json-server": "git+https://github.com/levonet/gemini-json-server.git",
+    "gemini-optipng": "^1.2.0",
+    "gemini-sauce": "1.0.1",
+    "gemini-saucelabs-info": "^1.0.0",
+    "html-reporter": "0.2.3",
+    "http-server": "^0.10.0",
+    "json-server": "^0.12.2",
+    "nock": "^9.2.6",
+    "selenium-standalone": "^5.11.2"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "scripts": {
+    "driver": "selenium-standalone start",
+    "http-server": "node ./node_modules/.bin/http-server",
+    "update": "gemini update",
+    "test": "gemini test",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "presets": [
+    "env"
+  ]
+}
