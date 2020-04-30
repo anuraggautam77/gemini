@@ -19,7 +19,8 @@
     "eslint-plugin-no-require-lodash": "^1.1.0",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "nyc": "^11.8.0",
-    "style-loader": "^0.21.0"
+    "style-loader": "^0.21.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chromedriver": "2.36",
@@ -43,9 +44,12 @@
     "http-server": "node ./node_modules/.bin/http-server",
     "update": "gemini update",
     "test": "gemini test",
-    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "presets": [
     "env"
-  ]
+  ],
+  "snyk": true
 }
