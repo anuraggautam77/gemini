@@ -18,7 +18,7 @@
     "eslint-plugin-jquery": "^0.6.0",
     "eslint-plugin-no-require-lodash": "^1.1.0",
     "eslint-plugin-prefer-spread": "^1.0.3",
-    "nyc": "^11.8.0",
+    "nyc": "^13.0.0",
     "style-loader": "^0.21.0"
   },
   "devDependencies": {
