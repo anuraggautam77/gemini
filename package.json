@@ -11,7 +11,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
     "es6": "0.0.7",
-    "eslint": "^3.0.1",
+    "eslint": "^9.0.0",
     "eslint-loader": "^1.3.0",
     "eslint-plugin-fetch": "0.0.1",
     "eslint-plugin-import": "^1.8.1",
@@ -19,7 +19,7 @@
     "eslint-plugin-no-require-lodash": "^1.1.0",
     "eslint-plugin-prefer-spread": "^1.0.3",
     "nyc": "^11.8.0",
-    "style-loader": "^0.21.0"
+    "style-loader": "^3.0.0"
   },
   "devDependencies": {
     "chromedriver": "2.36",
